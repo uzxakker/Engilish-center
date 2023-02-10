@@ -9,19 +9,27 @@ function Watch() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const {t , i18n} = useTranslation()
+  const { t, i18n } = useTranslation();
 
   return (
     <WrapperWatch>
       <WrapperContainer>
         <Wrapper>
           <div className="texts">
-            <p>
+            <p data-aos="fade-right" data-aos-duration="700">
               {t("Watch.0")}
             </p>
-            <button onClick={handleOpen}>Watch Video</button>
+            <button
+              data-aos="fade-right"
+              data-aos-duration="700"
+              onClick={handleOpen}
+            >
+              Watch Video
+            </button>
           </div>
           <img
+            data-aos="fade-left"
+            data-aos-duration="700"
             src="https://thumb.tildacdn.com/tild3462-3632-4461-b964-636338396239/-/format/webp/TV.png"
             alt="photo"
           />

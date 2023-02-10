@@ -70,7 +70,7 @@ export default function Teachers() {
     <WrapperTeachers id="spikers">
       <WrapperContainer>
         <Wrapper>
-          <h2>{t("Teach.0")}</h2>
+          <h2 data-aos="fade-down" data-aos-duration="700">{t("Teach.0")}</h2>
           <div className="cards">
             {food.map(([emoji, hueA, hueB]) => (
               <Card emoji={emoji} hueA={hueA} hueB={hueB} key={emoji} />

@@ -7,7 +7,7 @@ function Values() {
     <WrapperValues>
       <WrapperContainer>
         <Wrapper>
-          <ul>
+          <ul data-aos="fade-up" data-aos-duration="700">
             <li>
               <div className="icon">
                 <ion-icon name="logo-youtube"></ion-icon>

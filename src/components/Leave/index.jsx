@@ -3,16 +3,18 @@ import img from "../../assets/bot/img.png";
 import { WrapperContainer } from "../../App-styled";
 import { Wrapper, WrapperLeave } from "./styled-index";
 
-const Leave = () => {
+const Leave = ({ textEnter, textLeave }) => {
   return (
     <>
       <WrapperLeave>
         <WrapperContainer>
           <Wrapper>
-            <div className="box">
+            <div data-aos="flip-down" data-aos-duration="700" className="box">
               <div className="texts">
-                <h2>Xo’sh, yana qanday savollar qoldi?</h2>
-                <p>
+                <h2 textLeave={textLeave} textEnter={textEnter}>
+                  Xo’sh, yana qanday savollar qoldi?
+                </h2>
+                <p textLeave={textLeave} textEnter={textEnter}>
                   Englify maktabining telegram botiga savol yoʻllang, qoʻli
                   chaqqon menejerlarimiz barcha savollaringizga javob beradi
                 </p>
@@ -20,7 +22,9 @@ const Leave = () => {
                   <div className="btn">
                     <button>
                       <ion-icon name="chevron-forward-outline"></ion-icon>
-                      <span>Savol Qoldirish</span>
+                      <span textLeave={textLeave} textEnter={textEnter}>
+                        Savol Qoldirish
+                      </span>
                     </button>
                   </div>
                 </div>

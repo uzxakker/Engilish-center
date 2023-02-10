@@ -3,14 +3,18 @@ import { WrapperContainer } from "../../App-styled";
 import { WrapperOnline, Wrapper } from "./styled-index";
 
 function Online() {
-    const {t , i18n} = useTranslation()
+  const { t, i18n } = useTranslation();
   return (
     <>
       <WrapperOnline>
         <WrapperContainer>
           <Wrapper>
-            <h2>{t("Online.0")}</h2>
+            <h2 data-aos="fade-down" data-aos-duration="1000">
+              {t("Online.0")}
+            </h2>
             <iframe
+              data-aos="zoom-in"
+              data-aos-duration="700"
               width="70%"
               height="480"
               src="https://www.youtube.com/embed/HPai6oH4ANM"

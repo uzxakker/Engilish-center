@@ -8,6 +8,12 @@ export const Wrapper = styled.div`
     color: white;
     font-size: 35px;
     margin-bottom: 50px;
+
+    @media only screen and (max-width: 425px) {
+      iframe {
+        width: 100% !important;
+      }
+    }
   }
 `;
 

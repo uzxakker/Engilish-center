@@ -16,7 +16,7 @@ export const Btn = styled.button`
     text-transform: uppercase;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 10px;
     border-start-end-radius: 10px;
     border-end-end-radius: 10px;
   }

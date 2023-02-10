@@ -76,7 +76,7 @@ export const Wrapper = styled.div`
     .button {
       .btn {
         margin: 0 auto;
-        width: 258px;
+        /* width: 258px; */
       }
     }
   }

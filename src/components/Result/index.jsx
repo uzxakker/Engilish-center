@@ -5,29 +5,35 @@ import { WrapperContainer } from "../../App-styled";
 import Button from "../commons/button";
 import { Wrapper, WrapperResult } from "./styled-index";
 
-function Result() {
+function Result({ textEnter, textLeave }) {
   const data = [1, 2, 3, 4, 5, 6];
-  const { t, i18n} = useTranslation()
+  const { t, i18n } = useTranslation();
   return (
     <>
       <WrapperResult>
         <WrapperContainer>
           <Wrapper>
-            <h2>{t("Result.0")}</h2>
-            <h2>
-            {t("Result.1")}
+            <h2 data-aos="fade-right" data-aos-duration="700">
+              {t("Result.0")}
+            </h2>
+            <h2 data-aos="fade-right" data-aos-duration="700">
+              {t("Result.1")}
             </h2>
             <div className="Cards">
               <Row style={{ margin: 0 }}>
                 {data.map(() => (
                   <Col lg={6} md={12}>
-                    <div className="card">
+                    <div
+                      data-aos="flip-down"
+                      data-aos-duration="700"
+                      className="card"
+                    >
                       <img
                         src="https://thumb.tildacdn.com/tild6530-3332-4632-a661-636132613366/-/cover/120x120/center/center/-/format/webp/3_1.png"
                         alt="photo"
                       />
-                      <p>
-                      {t("Result.2")}
+                      <p textLeave={textLeave} textEnter={textEnter}>
+                        {t("Result.2")}
                       </p>
                     </div>
                   </Col>

@@ -7,6 +7,8 @@ export const Wrapper = styled.div`
   padding: 10px 0px 15px;
   position: relative;
   width: 100%;
+
+  
   h1 {
     margin: 0;
     color: white;
@@ -52,9 +54,8 @@ export const Wrapper = styled.div`
 `;
 
 export const WrapperNavbar = styled.div`
-position: fixed;
-z-index: 1000;
-background-color: rgba(0 , 0 , 0 ,0.5);
-width: 100%;
-
-`
+  position: fixed;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+`;

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import BackImg from "../../../assets/hero/planeta.png";
 
 export const Wrapper = styled.div`
+  z-index: 999999999;
   display: flex;
   align-items: center;
   justify-content: space-between;

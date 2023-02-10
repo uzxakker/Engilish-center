@@ -15,13 +15,28 @@ import Teachers from "./components/teachers";
 import Values from "./components/Values";
 import Watch from "./components/Watch";
 
+import AnimatedCursor from "react-animated-cursor";
+
+import ScrollingColorBackground from "react-scrolling-color-background";
+
 function App() {
+  const textAnimation = {
+    hidden: {
+      x: -100,
+      opacity: 0,
+    },
+    visible: (custom) => ({
+      x: 0,
+      opacity: 1,
+      transition: { delay: custom * 0.4 },
+    }),
+  };
   return (
     <>
       <Div>
         <GlobalStyle />
         <Header />
-        <System />
+        <System textAnimation={textAnimation} />
         <Course />
         <Watch />
         {/* <Categorise /> */}
@@ -29,12 +44,41 @@ function App() {
         <Online />
         <Result />
         <About />
-        <Teachers />
+        {/* <Teachers /> */}
         <Tariffs />
-        <Teacher/>
+        <Teacher />
         <Questions />
         <Leave />
         <Footer />
+
+        <AnimatedCursor
+          innerSize={10}
+          outerSize={10}
+          color="0, 0, 0"
+          outerAlpha={0.2}
+          innerScale={0.7}
+          outerScale={5}
+          clickables={[
+            "a",
+            'input[type="text"]',
+            'input[type="email"]',
+            'input[type="number"]',
+            'input[type="submit"]',
+            'input[type="image"]',
+            "label[for]",
+            "select",
+            "textarea",
+            "button",
+            ".link",
+            "h1",
+            "h2",
+            "h3",
+            "h4",
+            "h5",
+            "h6",
+            "p",
+          ]}
+        />
       </Div>
     </>
   );

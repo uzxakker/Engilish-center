@@ -4,12 +4,12 @@ import HomeHero from "./Hero";
 import Navbar from "./Navbar";
 import { Wrapper } from "./styled-index";
 
-function Header() {
+function Header({textEnter, textLeave}) {
   return (
     <Wrapper>
-      <Navbar />
+      <Navbar textLeave={textLeave} textEnter={textEnter}/>
       <WrapperContainer>
-        <HomeHero />
+        <HomeHero textLeave={textLeave} textEnter={textEnter} />
       </WrapperContainer>
     </Wrapper>
   );
