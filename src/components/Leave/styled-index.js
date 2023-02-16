@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const WrapperLeave = styled.div`
-  background-color: #8dd54f;
+  /* background-color: #8dd54f; */
 `;
 
 export const Wrapper = styled.div`

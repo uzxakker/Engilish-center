@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import courseImg from '../../assets/hero/registration-bg.png.webp'
 
 export const Cards = styled.div``;
 
@@ -50,7 +51,12 @@ export const Card = styled.div`
 `;
 
 export const WrapperCourse = styled.div`
-  background-color: #51a3fe;
+  background: url(${courseImg}) no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-position: center center;
+  /* max-height: 1200px; */
+  /* background-color: #51a3fe; */
   /* background-image: linear-gradient(180deg, rgba(81,163,254,0) 0%, rgba(81,163,254,1) 84%) */
 `;
 

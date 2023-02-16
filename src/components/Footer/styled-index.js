@@ -1,10 +1,32 @@
 import styled from "styled-components";
+import footerImg from '../../assets/hero/footer-bg.png.webp'
+
+
+export const WrapperFooter = styled.div`
+border-top: 1px solid #fff;
+  /* background-color: #111111;
+  background: url(${footerImg}) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  max-height: 1200px; */
+`;
+export const BigWrapper = styled.div`
+
+  background: url(${footerImg}) no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-position: center center;
+  /* max-height: 1200px; */
+`;
+
 
 export const Wrapper = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   padding: 50px 0px;
+  
   @media screen and (max-width: 680px) {
     display: flex;
     flex-wrap: wrap;
@@ -58,8 +80,4 @@ export const Wrapper = styled.div`
       }
     }
   }
-`;
-
-export const WrapperFooter = styled.div`
-  background-color: #111111;
 `;

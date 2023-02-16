@@ -1,11 +1,17 @@
 import styled from "styled-components";
+import tarifImg from '../../assets/hero/video-area-bg.png.webp'
 
 export const WrapperTariffs = styled.div`
-  background-color: #51a3fe;
+  /* background-color: #51a3fe; */
+  background: url(${tarifImg}) no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  background-position: bottom center;
+  max-height: 1200px;
 `;
 
 export const Wrapper = styled.div`
-  padding: 5% 0%;
+  padding: 50px 0 150px 0;
   .text {
     margin: 0;
     color: white;
@@ -18,12 +24,14 @@ export const Wrapper = styled.div`
     border-radius: 50%;
   }
   .card {
-    background-color: #a7cffd;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
     padding: 5%;
-    border-radius: 20px;
+    border-radius: 30px;
     margin-top: 5%;
     text-align: center;
-    box-shadow: 0px 0px 0px 10px #62acfe;
+    box-shadow: 0px 0px 10px 2px #fff;
+    z-index: 1;
     .card-text {
       background-image: linear-gradient(
         180deg,
@@ -38,6 +46,7 @@ export const Wrapper = styled.div`
       margin: 5% 0% 3%;
       color: white;
     }
+
     .card-text2 {
       background-image: linear-gradient(
         180deg,
@@ -80,4 +89,59 @@ export const Wrapper = styled.div`
       }
     }
   }
+
+.col, .col1, .wrappers{
+  position: relative;
+  z-index: 1;
+}
+
+  .before-div{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background-color: rgba(244,63,84,1);
+    top: -35px;
+    left: -80px;
+    z-index: -1;
+    border-radius: 54% 46% 53% 47% / 39% 42% 58% 61%;
+    transform: rotate(45deg);
+  }
+
+
+  .center-div{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(244,63,84,1);
+    top: 25%;
+    left: 35%;
+    z-index: -1;
+    border-radius: 54% 46% 53% 47% / 39% 42% 58% 61%;
+    transform: rotate(45deg);
+  }
+
+
+  .after-div{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background-color:rgba(255,149,25,1);
+    top: 400px;
+    right: 10px;
+    z-index: -1;
+    border-radius: 54% 46% 53% 47% / 39% 42% 58% 61%;
+    transform: rotate(45deg);
+    transform-origin: bottom;
+  }
+  /* .card:nth-child(2)::before{
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255,149,25,1);
+    top: -10px;
+    right: -10px;
+    z-index: -1;
+    border-radius: 10px;
+  } */
 `;

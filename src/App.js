@@ -15,11 +15,20 @@ import Teachers from "./components/teachers";
 import Values from "./components/Values";
 import Watch from "./components/Watch";
 
+import { motion, useScroll, useSpring } from "framer-motion";
+
 import AnimatedCursor from "react-animated-cursor";
 
 import ScrollingColorBackground from "react-scrolling-color-background";
 
 function App() {
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
   const textAnimation = {
     hidden: {
       x: -100,
@@ -34,21 +43,24 @@ function App() {
   return (
     <>
       <Div>
+        <motion.div className="progress-bar" style={{ scaleX }} />
         <GlobalStyle />
         <Header />
         <System textAnimation={textAnimation} />
-        <Course />
+        <div className="teacherss">
+          <Teachers />
+          <Teacher />
+          <Tariffs />
+        </div>
+        <div className="onlines">
+          <Online />
+          <Result />
+          <Course />
+        </div>
         <Watch />
         {/* <Categorise /> */}
         <Values />
-        <Online />
-        <Result />
         <About />
-        {/* <Teachers /> */}
-        <Tariffs />
-        <Teacher />
-        <Questions />
-        <Leave />
         <Footer />
 
         <AnimatedCursor

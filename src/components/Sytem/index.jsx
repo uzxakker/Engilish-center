@@ -18,16 +18,15 @@ function System({ textAnimation }) {
               {t("System.0")}
             </h2>
             <iframe
-              data-aos="zoom-in"
-              data-aos-duration="700"
               style={{
-                // scale,
-                borderRadius: "20px",
-              }}
-              width="70%"
-              height="430"
-              src="https://www.youtube.com/embed/7Ultx3eUHCU"
-              title="PSG vs Saudi All Stars 5-4 All Goals & Highlights - Ronaldo Debut 2023"
+                borderRadius: '20px',
+             }}
+              data-aos="zoom-in"
+              width='80%'
+              height='530'
+              data-aos-duration="700"
+              src="https://www.youtube.com/embed/liX95VS4a14"
+              title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
