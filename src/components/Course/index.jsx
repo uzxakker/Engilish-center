@@ -212,7 +212,7 @@ function Course({ textEnter, textLeave }) {
             </Row>
             <div className="div">
               <div className="Butto">
-                <Button>{t("Hero.9")}</Button>
+                <Button href={"#tariffs"}>{t("Hero.9")}</Button>
               </div>
             </div>
           </Wrapper>

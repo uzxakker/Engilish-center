@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Row } from "react-grid-system";
 import { useTranslation } from "react-i18next";
 import { WrapperContainer } from "../../App-styled";
@@ -7,6 +7,7 @@ import Button from "../commons/button";
 import { Wrapper, WrapperTariffs } from "./styled-index";
 import { useMotionValue, useTransform, motion } from "framer-motion";
 import { Parallax } from "react-scroll-parallax";
+import TarifModal from "./modal";
 
 function Tariffs({ textEnter, textLeave }) {
   const x = useMotionValue(0);
@@ -14,6 +15,19 @@ function Tariffs({ textEnter, textLeave }) {
   const rotateX = useTransform(y, [-100, 100], [40, -40]);
   const rotateY = useTransform(x, [-100, 100], [-40, 40]);
   const { t, i18n } = useTranslation();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
   return (
     <>
       <WrapperTariffs id="tariffs">
@@ -79,7 +93,7 @@ function Tariffs({ textEnter, textLeave }) {
                         </li>
                       </motion.ul>
                       <div className="button">
-                        <div className="btn">
+                        <div className="btn" onClick={showModal}>
                           <Button>Ishtirok Etish</Button>
                         </div>
                       </div>
@@ -88,7 +102,7 @@ function Tariffs({ textEnter, textLeave }) {
                 </Col>
 
                 <Col className="col1" lg={6} md={12} sm={12}>
-                  <Parallax translateX={[20, -10]}   speed={-2}>
+                  <Parallax translateX={[20, -10]} speed={-2}>
                     <div className="after-div"></div>
                   </Parallax>
 
@@ -147,7 +161,7 @@ function Tariffs({ textEnter, textLeave }) {
                         </li>
                       </motion.ul>
                       <div className="button">
-                        <div className="btn">
+                        <div className="btn" onClick={showModal}>
                           <Button>Ishtirok Etish</Button>
                         </div>
                       </div>
@@ -156,6 +170,7 @@ function Tariffs({ textEnter, textLeave }) {
                 </Col>
               </Row>
             </div>
+            <TarifModal isModalOpen={isModalOpen} handleCancel={handleCancel} handleOk={handleOk} />
           </Wrapper>
         </WrapperContainer>
       </WrapperTariffs>

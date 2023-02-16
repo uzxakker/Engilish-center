@@ -3,7 +3,7 @@ import { Btn } from "./styled-index";
 import "./style.css";
 import { motion } from "framer-motion";
 
-function Button({ children }) {
+function Button({ children , href }) {
   const buttonAnime = {
     hidden: {
       x: -100,
@@ -16,10 +16,11 @@ function Button({ children }) {
     }),
   };
   return (
-    <motion.button
+    <motion.a
       custom={5}
       variants={buttonAnime}
       className="custom-btn btn-12"
+      href={href}
     >
       <span>
         <i class="bx bx-chevron-right"></i>
@@ -29,7 +30,7 @@ function Button({ children }) {
         <i class="bx bx-chevron-right"></i>
         {children}
       </span>
-    </motion.button>
+    </motion.a>
   );
 }
 

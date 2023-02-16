@@ -10,11 +10,11 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   width: 100%;
   color: white;
-  background-image: url(${BackImg});
+  /* background-image: url(${BackImg});
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: right;
-  animation: gift 0.5s infinite;
+  animation: gift 0.5s infinite; */
 
   @media screen and (max-width: 630px) {
     background-position-y: bottom;
