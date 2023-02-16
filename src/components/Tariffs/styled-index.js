@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import tarifImg from '../../assets/hero/video-area-bg.png.webp'
+import tarifImg from "../../assets/hero/video-area-bg.png.webp";
 
 export const WrapperTariffs = styled.div`
   /* background-color: #51a3fe; */
@@ -7,7 +7,7 @@ export const WrapperTariffs = styled.div`
   /* background-attachment: fixed; */
   background-size: cover;
   background-position: bottom center;
-  max-height: 1200px;
+  /* max-height: 1200px; */
 `;
 
 export const Wrapper = styled.div`
@@ -18,6 +18,13 @@ export const Wrapper = styled.div`
     text-align: center;
     padding: 3% 0%;
     font-size: 40px;
+    @media screen and (max-width: 375px) {
+      padding: 20px 0  50px  0;
+    }
+    @media screen and (max-width: 320px) {
+      margin-bottom: 40px;
+      font-size: 28px;
+    }
   }
   img {
     width: 200px;
@@ -90,16 +97,18 @@ export const Wrapper = styled.div`
     }
   }
 
-.col, .col1, .wrappers{
-  position: relative;
-  z-index: 1;
-}
+  .col,
+  .col1,
+  .wrappers {
+    position: relative;
+    z-index: 1;
+  }
 
-  .before-div{
+  .before-div {
     position: absolute;
     width: 350px;
     height: 350px;
-    background-color: rgba(244,63,84,1);
+    background-color: rgba(244, 63, 84, 1);
     top: -35px;
     left: -80px;
     z-index: -1;
@@ -107,12 +116,11 @@ export const Wrapper = styled.div`
     transform: rotate(45deg);
   }
 
-
-  .center-div{
+  .center-div {
     position: absolute;
     width: 500px;
     height: 500px;
-    background-color: rgba(244,63,84,1);
+    background-color: rgba(244, 63, 84, 1);
     top: 25%;
     left: 35%;
     z-index: -1;
@@ -120,12 +128,11 @@ export const Wrapper = styled.div`
     transform: rotate(45deg);
   }
 
-
-  .after-div{
+  .after-div {
     position: absolute;
     width: 350px;
     height: 350px;
-    background-color:rgba(255,149,25,1);
+    background-color: rgba(255, 149, 25, 1);
     top: 400px;
     right: 10px;
     z-index: -1;

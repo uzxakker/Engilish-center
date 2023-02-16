@@ -21,7 +21,7 @@ export const WrapperTeachers = styled.div`
 
 export const Wrapper = styled.div`
   @media screen and (max-width: 768px) {
-     padding: 0 20px;
+    padding: 0 20px;
   }
   h2 {
     margin: 0;
@@ -35,10 +35,23 @@ export const Wrapper = styled.div`
     text-align: center;
     font-size: 40px;
     margin-bottom: 90px;
+
+    @media screen and (max-width: 375px) {
+      margin-bottom: 0;
+      font-size: 31px;
+    }
+    @media screen and (max-width: 320px) {
+      margin-bottom: 0;
+      font-size: 25px;
+    }
   }
 
   .row {
     padding-top: 280px !important;
+
+    @media screen and (max-width: 1024px) {
+     margin: 0 !important;
+    }
   }
   /* width: 500px; */
   .card {

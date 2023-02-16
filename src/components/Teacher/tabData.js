@@ -10,7 +10,7 @@ export const items = [
         />
       ),
       children: (
-        <Row>
+        <Row className="row">
           <Col lg={6}>
             <div className="content-wrapper">
               <div className="content-box">
@@ -70,7 +70,7 @@ export const items = [
         />
       ),
       children: (
-        <Row>
+        <Row className="row">
           <Col lg={6}>
             <div className="content-wrapper">
               <div className="content-box">
@@ -130,7 +130,7 @@ export const items = [
         />
       ),
       children: (
-        <Row>
+        <Row className="row">
           <Col lg={6}>
             <div className="content-wrapper">
               <div className="content-box">
@@ -190,7 +190,7 @@ export const items = [
         />
       ),
       children: (
-        <Row>
+        <Row className="row">
           <Col lg={6}>
             <div className="content-wrapper">
               <div className="content-box">
@@ -250,7 +250,7 @@ export const items = [
         />
       ),
       children: (
-        <Row>
+        <Row className="row">
           <Col lg={6}>
             <div className="content-wrapper">
               <div className="content-box">
@@ -310,7 +310,7 @@ export const items = [
         />
       ),
       children: (
-        <Row>
+        <Row className="row">
           <Col lg={6}>
             <div className="content-wrapper">
               <div className="content-box">

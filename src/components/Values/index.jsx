@@ -17,7 +17,7 @@ function Values() {
       <WrapperContainer>
       {/* data-aos="fade-up" data-aos-duration="700" */}
         <Wrapper>
-          <Parallax startScroll={3000} speed={2} translateX={[0, 20]}>
+          <Parallax startScroll={3000} speed={2} translateX={[0, 0]}>
           <ul >
             <li>
               <div className="icon">

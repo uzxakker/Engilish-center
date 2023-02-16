@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import BackImg from "../../../assets/hero/yer5.gif";
-import EarthGif from '../../../assets/hero/yer.gif'
+import EarthGif from "../../../assets/hero/yer.gif";
 
 export const Wrapper = styled.div`
   z-index: 999999999;
@@ -16,18 +16,12 @@ export const Wrapper = styled.div`
   background-position-x: right;
   animation: gift 0.5s infinite;
 
- 
-
-
-  
   @media screen and (max-width: 630px) {
     background-position-y: bottom;
     background-position-x: center;
   }
 
- 
-
-  .edulink{
+  .edulink {
     /* color: rgba(156, 237, 86, 255); */
     color: #fff;
     font-size: 20px;
@@ -36,9 +30,17 @@ export const Wrapper = styled.div`
   }
   .texts {
     width: 40%;
+    @media screen and (max-width: 1024px) {
+      padding: 0 25px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 0 25px;
+    }
+
     @media screen and (max-width: 425px) {
-     padding: 0 15px;
-  }
+      padding: 0 15px;
+    }
     @media screen and (max-width: 1000px) {
       width: 60%;
     }
@@ -52,16 +54,35 @@ export const Wrapper = styled.div`
         font-size: 17px !important;
       }
     }
+    @media screen and (max-width: 375px) {
+      width: 100%;
+      text-align: center;
+      p {
+        font-size: 14px !important;
+        font-weight: 500;
+      }
+    }
     h2 {
       font-size: 45px;
       padding: 0;
       margin: 0;
       margin-top: 15px;
+
+      @media screen and (max-width: 375px) {
+        font-size: 31px;
+      }
     }
     .subtext {
       font-weight: 700;
       padding-top: 5px;
       line-height: 25px;
+    }
+    @media screen and (max-width: 375px) {
+      width: 100%;
+      text-align: center;
+      .subtext {
+        font-weight: 500;
+      }
     }
     p {
       font-size: 19px;

@@ -28,6 +28,7 @@ function Watch() {
             </button>
           </div>
           <img
+            className="tv-img"
             data-aos="fade-left"
             data-aos-duration="700"
             src="https://thumb.tildacdn.com/tild3462-3632-4461-b964-636338396239/-/format/webp/TV.png"

@@ -25,7 +25,7 @@ function Course({ textEnter, textLeave }) {
       <WrapperCourse id="course">
         <WrapperContainer>
           <Wrapper>
-            <h2 data-aos="fade-down" data-aos-duration="1000">
+            <h2 className="course-title" data-aos="fade-down" data-aos-duration="1000">
               {t("Course.0")}
             </h2>
             <Row style={{ margin: 0 }}>

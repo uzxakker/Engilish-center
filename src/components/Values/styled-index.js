@@ -5,6 +5,9 @@ export const WrapperValues = styled.div`
 
 export const Wrapper = styled.div`
   padding: 5% 0%;
+  @media screen and (max-width: 1024px) {
+    padding: 5% 20px;
+  }
   ul {
     margin: 0;
     padding: 0;

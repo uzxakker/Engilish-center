@@ -9,6 +9,13 @@ export const Wrapper = styled.div`
     font-size: 35px;
     margin-bottom: 50px;
 
+    @media screen and (max-width: 375px) {
+      font-size: 31px;
+    }
+    @media screen and (max-width: 320px) {
+      font-size: 25px;
+    }
+
     iframe{
       border-radius: 20px;
     }

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import courseImg from '../../assets/hero/registration-bg.png.webp'
+import courseImg from "../../assets/hero/registration-bg.png.webp";
 
 export const Cards = styled.div``;
 
@@ -13,10 +13,10 @@ export const Card = styled.div`
   .posImg {
     position: absolute;
     bottom: 78%;
-    @media screen and (max-width: 500px){
+    @media screen and (max-width: 500px) {
       bottom: 80%;
     }
-    @media screen and (max-width: 400px){
+    @media screen and (max-width: 400px) {
       bottom: 82%;
     }
   }
@@ -42,7 +42,7 @@ export const Card = styled.div`
       position: absolute;
       bottom: 77%;
       left: 90%;
-      @media screen and (max-width: 400px){
+      @media screen and (max-width: 400px) {
         left: 85%;
         bottom: 83%;
       }
@@ -61,14 +61,20 @@ export const WrapperCourse = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  h2 {
+  .course-title {
     margin: 0;
     text-align: center;
     color: white;
     padding: 100px 0px;
     font-size: 40px;
     font-weight: bold;
+    @media screen and (max-width: 425px) {
+      font-size: 26px;
+      width: 90%;
+      margin: 0 auto;
+    }
   }
+
   .div {
     width: 100%;
   }

@@ -6,12 +6,21 @@ export const WrapperResult = styled.div`
 
 export const Wrapper = styled.div`
   padding: 5% 0%;
+
+  
   h2 {
     margin: 0;
     color: white;
     font-size: 45px;
     font-weight: bold;
     width: 60%;
+
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+      text-align: center;
+    }
+
+    
 
     @media screen and (max-width: 980px) {
       width: 100%;
@@ -21,6 +30,11 @@ export const Wrapper = styled.div`
     }
     @media screen and (max-width: 400px) {
       font-size: 20px;
+    }
+
+    @media screen and (max-width: 425px) {
+      width: 90%;
+      margin: 0 auto;
     }
   }
   .Cards {
