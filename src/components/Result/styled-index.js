@@ -54,3 +54,53 @@ export const Wrapper = styled.div`
     }
   }
 `;
+
+export const Card = styled.div`
+  background-color: #a8d1fe;
+  margin: 140px 0 50px;
+  padding: 30px 20px 20px;
+  border-radius: 10px;
+  /* position: relative; */
+  .texts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  p {
+    font-size: 18px;
+  }
+  .headr {
+    position: relative !important;
+    /* border: 1px solid black; */
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+  }
+  .video {
+    /* position: absolute; */
+    img {
+      position: absolute;
+      bottom: -100%;
+      /* bottom : 0; */
+      left: -10%;
+      right: 10%;
+      width: 310px;
+      height: 300px;
+    }
+    i {
+      font-size: 50px;
+      color: white;
+      position: absolute;
+      top: -130%;
+      z-index: 1000;
+      right: 39%;
+    }
+    /* border-radius: 10px; */
+    @media screen and (max-width: 500px) {
+      bottom: 80%;
+    }
+    @media screen and (max-width: 400px) {
+      bottom: 82%;
+    }
+  }
+`;

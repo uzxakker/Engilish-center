@@ -4,7 +4,7 @@ import Img from "../../../assets/hero/planeta.png";
 import Button from "../../commons/button";
 import { Wrapper, Top } from "./styled-index";
 import { motion } from "framer-motion";
-
+import "./globus.css";
 
 function HomeHero() {
   const { t, i18n } = useTranslation();
@@ -63,9 +63,11 @@ function HomeHero() {
               </motion.p>
             </li>
           </ul> */}
-          <motion.p custom={1} variants={textAnimation} className="edulink"><span>Edulink.uz</span> online bilimlar dunyosi!</motion.p>
+          <motion.p custom={1} variants={textAnimation} className="edulink">
+            <span>Edulink.uz</span> online bilimlar dunyosi!
+          </motion.p>
           <motion.h2 custom={3} variants={textAnimation2}>
-            {t("Hero.6")} &   IELTS
+            {t("Hero.6")} & IELTS
           </motion.h2>
           <motion.p custom={4} variants={textAnimation2} className="subtext">
             {t("Hero.7")}
@@ -73,13 +75,24 @@ function HomeHero() {
           <motion.p custom={4} variants={textAnimation2}>
             {t("Hero.8")}
           </motion.p>
-          <Button data-aos="fade-down" data-aos-duration="700">
+          <Button data-aos="fade-down" data-aos-duration="700" href={"#tariffs"}>
             {t("Hero.9")}
           </Button>
         </motion.div>
         {/* <div className="Img">
           <img src={Img} alt="photo" />
         </div> */}
+        <div class="globe-container">
+          <div class="globe">
+            <div class="globe-sphere"></div>
+            <div class="globe-outer-shadow"></div>
+            <div class="globe-worldmap">
+              <div class="globe-worldmap-back"></div>
+              <div class="globe-worldmap-front"></div>
+            </div>
+            <div class="globe-inner-shadow"></div>
+          </div>
+        </div>  
       </Wrapper>
     </>
   );
