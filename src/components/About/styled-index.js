@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const WrapperAbout = styled.div`
-  background-color: #51a3fe;
+  /* background-color: #51a3fe; */
 `;
 
 export const Wrapper = styled.div`

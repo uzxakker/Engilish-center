@@ -28,12 +28,12 @@ function Questions({ textEnter, textLeave }) {
           </p>
           <div className="acords">
             <Accordion
-              data-aos="fade-down"
-              data-aos-duration="500"
+              className="accordion"
+              // data-aos="fade-down"
+              // data-aos-duration="500"
               expanded={expanded === "panel1"}
               onChange={handleChange("panel1")}
               style={{
-                background: "#7DBD46",
                 color: "white",
                 margin: "10px 0 0 0",
               }}
@@ -61,12 +61,12 @@ function Questions({ textEnter, textLeave }) {
               </AccordionDetails>
             </Accordion>
             <Accordion
-              data-aos="fade-down"
-              data-aos-duration="600"
+              className="accordion"
+              // data-aos="fade-down"
+              // data-aos-duration="600"
               expanded={expanded === "panel2"}
               onChange={handleChange("panel2")}
               style={{
-                background: "#7DBD46",
                 color: "white",
                 margin: "10px 0 0 0",
               }}
@@ -94,11 +94,12 @@ function Questions({ textEnter, textLeave }) {
               </AccordionDetails>
             </Accordion>
             <Accordion
-            data-aos="fade-down" data-aos-duration="700"
+              className="accordion"
+              // data-aos="fade-down"
+              // data-aos-duration="700"
               expanded={expanded === "panel3"}
               onChange={handleChange("panel3")}
               style={{
-                background: "#7DBD46",
                 color: "white",
                 margin: "10px 0 0 0",
               }}
@@ -126,11 +127,12 @@ function Questions({ textEnter, textLeave }) {
               </AccordionDetails>
             </Accordion>
             <Accordion
-            data-aos="fade-down" data-aos-duration="800"
+              className="accordion"
+              // data-aos="fade-down"
+              // data-aos-duration="800"
               expanded={expanded === "panel4"}
               onChange={handleChange("panel4")}
               style={{
-                background: "#7DBD46",
                 color: "white",
                 margin: "10px 0 0 0",
               }}

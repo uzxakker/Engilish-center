@@ -4,11 +4,10 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 10px 0px 15px;
+  padding: 5px 0px 5px;
   position: relative;
   width: 100%;
 
-  
   h1 {
     margin: 0;
     color: white;
@@ -18,6 +17,7 @@ export const Wrapper = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 65%;
+    margin: 0;
     @media screen and (max-width: 960px) {
       width: 70%;
     }
@@ -33,6 +33,7 @@ export const Wrapper = styled.div`
       }
     }
   }
+
   select {
     border: 1px solid #498dfa;
     padding: 5px 10px;
@@ -56,6 +57,6 @@ export const Wrapper = styled.div`
 export const WrapperNavbar = styled.div`
   position: fixed;
   z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
+  
 `;

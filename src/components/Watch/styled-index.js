@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const WrapperWatch = styled.div`
-  background-color: #ffb525;
+  /* background-color: #ffb525; */
   position: relative;
 `;
 

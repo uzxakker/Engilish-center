@@ -5,8 +5,14 @@ import { WrapperContainer } from "../../App-styled";
 import img from "../../assets/traffis/roket.png";
 import Button from "../commons/button";
 import { Wrapper, WrapperTariffs } from "./styled-index";
+import { useMotionValue, useTransform, motion } from "framer-motion";
+import { Parallax } from "react-scroll-parallax";
 
 function Tariffs({ textEnter, textLeave }) {
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+  const rotateX = useTransform(y, [-100, 100], [40, -40]);
+  const rotateY = useTransform(x, [-100, 100], [-40, 40]);
   const { t, i18n } = useTranslation();
   return (
     <>
@@ -15,192 +21,138 @@ function Tariffs({ textEnter, textLeave }) {
           <Wrapper>
             <h2 className="text">{t("Tariffs.0")}</h2>
             <div className="Cards">
-              <Row style={{ margin: 0 }}>
-                <Col lg={6} md={12} sm={12}>
-                  <div
-                    data-aos="fade-right"
-                    data-aos-duration="700"
-                    className="card"
-                  >
-                    <img src={img} alt="" />
-                    <br />
-                    <button className="card-text">Megabayt</button>
-                    <p
-                      textLeave={textLeave}
-                      textEnter={textEnter}
-                      className="card-subtext"
+              <Row className="wrappers" style={{ margin: 0 }}>
+                <Col className="col" lg={6} md={12} sm={12}>
+                  <Parallax translateX={[-20, 10]} speed={-2}>
+                    <div className="before-div"></div>
+                  </Parallax>
+                  <Parallax scale={["0.75", "1"]} speed={5}>
+                    <motion.div
+                      style={{ x, y, rotateX, rotateY, z: 100 }}
+                      drag
+                      dragElastic={0.28}
+                      dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
+                      whileTap={{ cursor: "grabbing" }}
+                      className="card"
                     >
-                      (joylar soni — ∞)
-                    </p>
+                      <motion.img
+                        style={{ x, y, rotateX, rotateY, z: 200 }}
+                        src={img}
+                        alt=""
+                      />
+                      <br />
+                      <motion.button
+                        style={{ x, y, rotateX, rotateY, z: 200 }}
+                        className="card-text"
+                      >
+                        Megabayt
+                      </motion.button>
+                      <motion.p
+                        style={{ x, y, rotateX, rotateY, z: 200 }}
+                        className="card-subtext"
+                      >
+                        (joylar soni — ∞)
+                      </motion.p>
 
-                    <ul>
-                      <li>
-                        <h3
-                          data-aos="fade-right"
-                          data-aos-duration="700"
-                          textLeave={textLeave}
-                          textEnter={textEnter}
-                        >
-                          Barch o'quv darslariga kirish
-                        </h3>
-                        <p
-                          data-aos="fade-left"
-                          data-aos-duration="700"
-                          textLeave={textLeave}
-                          textEnter={textEnter}
-                        >
-                          Kurs kontentiga blablablabla
-                        </p>
-                      </li>
-                      <li>
-                        <h3
-                          data-aos="fade-right"
-                          data-aos-duration="700"
-                          textLeave={textLeave}
-                          textEnter={textEnter}
-                        >
-                          Lorem ipsum dolor sit amet.
-                        </h3>
-                        <p
-                          data-aos="fade-left"
-                          data-aos-duration="700"
-                          textLeave={textLeave}
-                          textEnter={textEnter}
-                        >
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Soluta, sapiente!
-                        </p>
-                      </li>
-                      <li>
-                        <h3
-                          data-aos="fade-right"
-                          data-aos-duration="700"
-                          textLeave={textLeave}
-                          textEnter={textEnter}
-                        >
-                          Lorem ipsum dolor sit amet.
-                        </h3>
-                        <p
-                          data-aos="fade-left"
-                          data-aos-duration="700"
-                          textLeave={textLeave}
-                          textEnter={textEnter}
-                        >
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Quam odit placeat cum recusandae iure
-                          accusantium.
-                        </p>
-                      </li>
-                      <li>
-                        <h3
-                          data-aos="fade-right"
-                          data-aos-duration="700"
-                          textLeave={textLeave}
-                          textEnter={textEnter}
-                        >
-                          Lorem ipsum dolor sit amet consectetur.
-                        </h3>
-                      </li>
-                    </ul>
-                    <div className="button">
-                      <div className="btn">
-                        <Button>Ishtirok Etish</Button>
+                      <motion.ul style={{ x, y, rotateX, rotateY, z: 200 }}>
+                        <li>
+                          <h3>Barch o'quv darslariga kirish</h3>
+                          <p>Kurs kontentiga blablablabla</p>
+                        </li>
+                        <li>
+                          <h3>Lorem ipsum dolor sit amet.</h3>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Soluta, sapiente!
+                          </p>
+                        </li>
+                        <li>
+                          <h3>Lorem ipsum dolor sit amet.</h3>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quam odit placeat cum recusandae iure
+                            accusantium.
+                          </p>
+                        </li>
+                        <li>
+                          <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                        </li>
+                      </motion.ul>
+                      <div className="button">
+                        <div className="btn">
+                          <Button>Ishtirok Etish</Button>
+                        </div>
                       </div>
-                    </div>
-                  </div>
+                    </motion.div>
+                  </Parallax>
                 </Col>
-                <Col lg={6} md={12} sm={12}>
-                  <div
-                    data-aos="fade-left"
-                    data-aos-duration="700"
-                    className="card"
-                  >
-                    <img src={img} alt="" />
-                    <br />
-                    <button className="card-text2">Gegabayt</button>
-                    <p
-                      textLeave={textLeave}
-                      textEnter={textEnter}
-                      className="card-subtext"
-                    >
-                      (joylar soni — ∞)
-                    </p>
 
-                    <ul>
-                      <li>
-                        <h3
-                          data-aos="fade-right"
-                          data-aos-duration="700"
-                          textLeave={textLeave}
-                          textEnter={textEnter}
-                        >
-                          Barch o'quv darslariga kirish
-                        </h3>
-                        <p
-                          data-aos="fade-left"
-                          data-aos-duration="700"
-                          textLeave={textLeave}
-                          textEnter={textEnter}
-                        >
-                          Kurs kontentiga blablablabla
-                        </p>
-                      </li>
-                      <li>
-                        <h3
-                          data-aos="fade-right"
-                          data-aos-duration="700"
-                          textLeave={textLeave}
-                          textEnter={textEnter}
-                        >
-                          Lorem ipsum dolor sit amet.
-                        </h3>
-                        <p
-                          data-aos="fade-left"
-                          data-aos-duration="700"
-                          textLeave={textLeave}
-                          textEnter={textEnter}
-                        >
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Soluta, sapiente!
-                        </p>
-                      </li>
-                      <li>
-                        <h3
-                          data-aos="fade-right"
-                          data-aos-duration="700"
-                          textLeave={textLeave}
-                          textEnter={textEnter}
-                        >
-                          Lorem ipsum dolor sit amet.
-                        </h3>
-                        <p
-                          data-aos="fade-left"
-                          data-aos-duration="700"
-                          textLeave={textLeave}
-                          textEnter={textEnter}
-                        >
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Quam odit placeat cum recusandae iure
-                          accusantium.
-                        </p>
-                      </li>
-                      <li>
-                        <h3
-                          data-aos="fade-right"
-                          data-aos-duration="700"
-                          textLeave={textLeave}
-                          textEnter={textEnter}
-                        >
-                          Lorem ipsum dolor sit amet consectetur.
-                        </h3>
-                      </li>
-                    </ul>
-                    <div className="button">
-                      <div className="btn">
-                        <Button>Ishtirok Etish</Button>
+                <Col className="col1" lg={6} md={12} sm={12}>
+                  <Parallax translateX={[20, -10]}   speed={-2}>
+                    <div className="after-div"></div>
+                  </Parallax>
+
+                  <Parallax scale={["0.75", "1"]} speed={5}>
+                    <motion.div
+                      style={{ x, y, rotateX, rotateY, z: 100 }}
+                      drag
+                      dragElastic={0.28}
+                      dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
+                      whileTap={{ cursor: "grabbing" }}
+                      className="card"
+                    >
+                      <motion.img
+                        style={{ x, y, rotateX, rotateY, z: 200 }}
+                        src={img}
+                        alt=""
+                      />
+                      <br />
+                      <motion.button
+                        style={{ x, y, rotateX, rotateY, z: 200 }}
+                        className="card-text"
+                      >
+                        Gegabayt
+                      </motion.button>
+                      <motion.p
+                        style={{ x, y, rotateX, rotateY, z: 200 }}
+                        className="card-subtext"
+                      >
+                        (joylar soni — ∞)
+                      </motion.p>
+
+                      <motion.ul style={{ x, y, rotateX, rotateY, z: 200 }}>
+                        <li>
+                          <h3>Barch o'quv darslariga kirish</h3>
+                          <p>Kurs kontentiga blablablabla</p>
+                        </li>
+                        <li>
+                          <h3>Lorem ipsum dolor sit amet.</h3>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Soluta, sapiente!
+                          </p>
+                        </li>
+                        <li>
+                          <h3>Lorem ipsum dolor sit amet.</h3>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quam odit placeat cum recusandae iure
+                            accusantium.
+                          </p>
+                        </li>
+                        <li>
+                          <h3 textLeave={textLeave} textEnter={textEnter}>
+                            Lorem ipsum dolor sit amet consectetur.
+                          </h3>
+                        </li>
+                      </motion.ul>
+                      <div className="button">
+                        <div className="btn">
+                          <Button>Ishtirok Etish</Button>
+                        </div>
                       </div>
-                    </div>
-                  </div>
+                    </motion.div>
+                  </Parallax>
                 </Col>
               </Row>
             </div>

@@ -5,6 +5,7 @@ import Button from "../../commons/button";
 import { Wrapper, Top } from "./styled-index";
 import { motion } from "framer-motion";
 
+
 function HomeHero() {
   const { t, i18n } = useTranslation();
 
@@ -33,10 +34,10 @@ function HomeHero() {
   };
   return (
     <>
-      <Top></Top>
+      {/* <Top></Top> */}
       <Wrapper>
         <motion.div initial="hidden" whileInView="visible" className="texts">
-          <ul>
+          {/* <ul>
             <li>
               <motion.h3 custom={1} variants={textAnimation}>
                 {t("Hero.0")}:
@@ -61,9 +62,10 @@ function HomeHero() {
                 {t("Hero.5")}
               </motion.p>
             </li>
-          </ul>
+          </ul> */}
+          <motion.p custom={1} variants={textAnimation} className="edulink"><span>Edulink.uz</span> online bilimlar dunyosi!</motion.p>
           <motion.h2 custom={3} variants={textAnimation2}>
-            {t("Hero.6")}
+            {t("Hero.6")} &   IELTS
           </motion.h2>
           <motion.p custom={4} variants={textAnimation2} className="subtext">
             {t("Hero.7")}
@@ -71,7 +73,7 @@ function HomeHero() {
           <motion.p custom={4} variants={textAnimation2}>
             {t("Hero.8")}
           </motion.p>
-          <Button data-aos="fade-down" data-aos-duration="800">
+          <Button data-aos="fade-down" data-aos-duration="700">
             {t("Hero.9")}
           </Button>
         </motion.div>

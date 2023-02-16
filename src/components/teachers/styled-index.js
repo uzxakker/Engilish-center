@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const WrapperTeachers = styled.div`
-  background-image: linear-gradient(
+  padding: 50px 0;
+
+  /* background-image: linear-gradient(
       180deg,
       rgba(81, 163, 254, 255) 0%,
       rgba(81, 163, 254, 0) 50%
@@ -11,18 +13,32 @@ export const WrapperTeachers = styled.div`
       rgba(255, 255, 255, .9) 50%,
       rgba(81, 163, 254, 255) 100%
     ),
-    url("https://thumb.tildacdn.com/tild6133-3862-4536-b666-323765353361/-/format/webp/m-monk-E813FON0wDQ-u.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
+    url("https://thumb.tildacdn.com/tild6133-3862-4536-b666-323765353361/-/format/webp/m-monk-E813FON0wDQ-u.png"); */
+  /* background-repeat: no-repeat; */
+  /* background-color: #51a3fe; */
+  /* background-size: 100%; */
 `;
 
 export const Wrapper = styled.div`
+  @media screen and (max-width: 768px) {
+     padding: 0 20px;
+  }
   h2 {
     margin: 0;
     color: white;
     text-align: center;
     font-size: 40px;
     padding: 3% 0%;
+  }
+  .teacher-title {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 90px;
+  }
+
+  .row {
+    padding-top: 280px !important;
   }
   /* width: 500px; */
   .card {
@@ -38,13 +54,13 @@ export const Wrapper = styled.div`
     box-shadow: 0 0 1px hsl(0deg 0% 0% / 0.075), 0 0 2px hsl(0deg 0% 0% / 0.075),
       0 0 4px hsl(0deg 0% 0% / 0.075), 0 0 8px hsl(0deg 0% 0% / 0.075),
       0 0 16px hsl(0deg 0% 0% / 0.075);
-      @media screen and (max-width: 440px){
-      width: 2  50px !important;
+    @media screen and (max-width: 440px) {
+      width: 2 50px !important;
     }
   }
 
   .card-container:nth-child(2) {
-    margin-top:10%;
+    margin-top: 10%;
   }
 
   .card-container {
@@ -57,28 +73,28 @@ export const Wrapper = styled.div`
     width: 50%;
     height: 100%;
 
-    @media screen and (max-width: 1065px){
+    @media screen and (max-width: 1065px) {
       width: 500px !important;
     }
-    @media screen and (max-width: 520px){
+    @media screen and (max-width: 520px) {
       width: 100% !important;
     }
 
     img {
       width: 200px;
       transform: rotate(-10deg);
-      @media screen and (max-width: 440px){
-      width: 150px !important;
-    }
+      @media screen and (max-width: 440px) {
+        width: 150px !important;
+      }
     }
   }
   .cards {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 5% 0;
-    @media screen and (max-width: 1000px){
+    @media screen and (max-width: 1000px) {
       display: flex;
       flex-direction: column;
       justify-content: center;

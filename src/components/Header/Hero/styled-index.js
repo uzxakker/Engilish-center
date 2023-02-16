@@ -1,23 +1,44 @@
 import styled from "styled-components";
-import BackImg from "../../../assets/hero/planeta.png";
+import BackImg from "../../../assets/hero/yer5.gif";
+import EarthGif from '../../../assets/hero/yer.gif'
 
 export const Wrapper = styled.div`
   z-index: 999999999;
+  padding: 90px 0 200px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 230px;
   width: 100%;
   color: white;
   background-image: url(${BackImg});
   background-repeat: no-repeat;
+  background-position-y: center;
   background-position-x: right;
+  animation: gift 0.5s infinite;
+
+ 
+
+
+  
   @media screen and (max-width: 630px) {
     background-position-y: bottom;
     background-position-x: center;
   }
+
+ 
+
+  .edulink{
+    /* color: rgba(156, 237, 86, 255); */
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: underline;
+  }
   .texts {
     width: 40%;
+    @media screen and (max-width: 425px) {
+     padding: 0 15px;
+  }
     @media screen and (max-width: 1000px) {
       width: 60%;
     }
@@ -32,7 +53,7 @@ export const Wrapper = styled.div`
       }
     }
     h2 {
-      font-size: 55px;
+      font-size: 45px;
       padding: 0;
       margin: 0;
       margin-top: 15px;
