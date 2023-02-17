@@ -143,7 +143,7 @@ export const Wrapper = styled.div`
     width: 85px;
     height: 85px;
     object-fit: cover;
-    border: 2px solid red;
+    border: 2px solid rgba(141,213,79,1);
     border-radius: 50%;
   }
   .ant-tabs-nav::before {

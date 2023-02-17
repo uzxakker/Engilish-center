@@ -33,7 +33,7 @@ function Tariffs({ textEnter, textLeave }) {
       <WrapperTariffs id="tariffs">
         <WrapperContainer>
           <Wrapper>
-            <h2 className="text">{t("Tariffs.0")}</h2>
+            <h2 data-aos="fade-up" data-aos-duration='900' className="text">{t("Tariffs.0")}</h2>
             <div className="Cards">
               <Row className="wrappers" style={{ margin: 0 }}>
                 <Col className="col" lg={6} md={12} sm={12}>
@@ -102,7 +102,7 @@ function Tariffs({ textEnter, textLeave }) {
                 </Col>
 
                 <Col className="col1" lg={6} md={12} sm={12}>
-                  <Parallax translateX={[20, -10]} speed={-2}>
+                  <Parallax translateX={[20, -10]} speed={-5}>
                     <div className="after-div"></div>
                   </Parallax>
 

@@ -11,7 +11,7 @@ export const items = [
       ),
       children: (
         <Row className="row">
-          <Col lg={6}>
+          <Col data-aos="fade-up-right" data-aos-duration='700' lg={6}>
             <div className="content-wrapper">
               <div className="content-box">
                 <h2>Marina Mogilko</h2>
@@ -49,7 +49,7 @@ export const items = [
               </div>
             </div>
           </Col>
-          <Col lg={6}>
+          <Col data-aos="fade-up-left" data-aos-duration='700' lg={6}>
             <div className="img-boxs">
               <img
                 src="https://linguatrip-prod-cdn.azureedge.net//Images/online/products/teachers/marina/marina-card.webp"
@@ -71,7 +71,7 @@ export const items = [
       ),
       children: (
         <Row className="row">
-          <Col lg={6}>
+          <Col data-aos="fade-up-right" data-aos-duration='700' lg={6}>
             <div className="content-wrapper">
               <div className="content-box">
                 <h2>Venya Pak</h2>
@@ -109,7 +109,7 @@ export const items = [
               </div>
             </div>
           </Col>
-          <Col lg={6}>
+          <Col data-aos="fade-up-left" data-aos-duration='700' lg={6}>
             <div className="img-boxs">
               <img
                 src="https://linguatrip-prod-cdn.azureedge.net//Images/online/products/teachers/venya/venya-card.webp"
@@ -131,7 +131,7 @@ export const items = [
       ),
       children: (
         <Row className="row">
-          <Col lg={6}>
+          <Col data-aos="fade-up-right" data-aos-duration='700' lg={6}>
             <div className="content-wrapper">
               <div className="content-box">
                 <h2>Xenia Almog</h2>
@@ -169,7 +169,7 @@ export const items = [
               </div>
             </div>
           </Col>
-          <Col lg={6}>
+          <Col data-aos="fade-up-left" data-aos-duration='700' lg={6}>
             <div className="img-boxs">
               <img
                 src="https://linguatrip-prod-cdn.azureedge.net//Images/online/products/teachers/kseniya/kseniya-card.webp"
@@ -191,7 +191,7 @@ export const items = [
       ),
       children: (
         <Row className="row">
-          <Col lg={6}>
+          <Col data-aos="fade-up-right" data-aos-duration='700' lg={6}>
             <div className="content-wrapper">
               <div className="content-box">
                 <h2>Michael Zagorski</h2>
@@ -229,7 +229,7 @@ export const items = [
               </div>
             </div>
           </Col>
-          <Col lg={6}>
+          <Col data-aos="fade-up-left" data-aos-duration='700' lg={6}>
             <div className="img-boxs">
               <img
                 src="https://linguatrip-prod-cdn.azureedge.net//Images/online/products/teachers/michael/michael-card.webp"
@@ -251,7 +251,7 @@ export const items = [
       ),
       children: (
         <Row className="row">
-          <Col lg={6}>
+          <Col data-aos="fade-up-right" data-aos-duration='700' lg={6}>
             <div className="content-wrapper">
               <div className="content-box">
                 <h2>Anastasia Ivbule</h2>
@@ -289,7 +289,7 @@ export const items = [
               </div>
             </div>
           </Col>
-          <Col lg={6}>
+          <Col data-aos="fade-up-left" data-aos-duration='700' lg={6}>
             <div className="img-boxs">
               <img
                 src="https://linguatrip-prod-cdn.azureedge.net//Images/online/products/teachers/nastya/nastya-card.webp"
@@ -311,7 +311,7 @@ export const items = [
       ),
       children: (
         <Row className="row">
-          <Col lg={6}>
+          <Col data-aos="fade-up-right" data-aos-duration='700' lg={6}>
             <div className="content-wrapper">
               <div className="content-box">
                 <h2>Joseph O'Neill</h2>
@@ -349,7 +349,7 @@ export const items = [
               </div>
             </div>
           </Col>
-          <Col lg={6}>
+          <Col  data-aos="fade-up-left" data-aos-duration='700' lg={6}>
             <div className="img-boxs">
               <img
                 src="https://linguatrip-prod-cdn.azureedge.net//Images/online/products/teachers/joe/joe-card.webp"

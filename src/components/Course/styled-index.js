@@ -4,11 +4,17 @@ import courseImg from "../../assets/hero/registration-bg.png.webp";
 export const Cards = styled.div``;
 
 export const Card = styled.div`
-  background-color: #a8d1fe;
+  /* background-color: #a8d1fe; */
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  box-shadow: 0px 0px 10px 2px #fff;
   margin-bottom: 100px;
   padding: 80px 20px 20px 20px;
   border-radius: 10px;
   position: relative;
+  .white-p{
+    color: #fff;
+  }
 
   .posImg {
     position: absolute;
@@ -69,7 +75,7 @@ export const Wrapper = styled.div`
     font-size: 40px;
     font-weight: bold;
     @media screen and (max-width: 425px) {
-      font-size: 26px;
+      font-size: 29px;
       width: 90%;
       margin: 0 auto;
     }
@@ -77,9 +83,12 @@ export const Wrapper = styled.div`
 
   .div {
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .Butto {
-    width: 260px;
+    /* width: 260px; */
     margin: 0 auto;
   }
   padding-bottom: 50px;

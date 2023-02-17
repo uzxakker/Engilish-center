@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Modals = styled.div`
   display: none;
-  background-color: #498dfa;
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(20px);
   position: fixed !important;
   padding: 0 20px 0 0px;
   width: 80%;
@@ -11,7 +12,6 @@ export const Modals = styled.div`
   left: ${(props) => (props.modal ? "-800px" : "0px")};
   transition: 0.65s;
   overflow-y: scroll;
-  border: 1px solid #498dfa;
   color: black;
   @media screen and (max-width: 900px) {
     display: block;

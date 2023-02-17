@@ -7,7 +7,6 @@ export const WrapperResult = styled.div`
 export const Wrapper = styled.div`
   padding: 5% 0%;
 
-  
   h2 {
     margin: 0;
     color: white;
@@ -19,8 +18,6 @@ export const Wrapper = styled.div`
       width: 100%;
       text-align: center;
     }
-
-    
 
     @media screen and (max-width: 980px) {
       width: 100%;
@@ -70,11 +67,30 @@ export const Wrapper = styled.div`
 `;
 
 export const Card = styled.div`
-  background-color: #a8d1fe;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  box-shadow: 0px 0px 10px 2px #fff;
   margin: 140px 0 50px;
   padding: 30px 20px 20px;
   border-radius: 10px;
-  /* position: relative; */
+  position: relative;
+  z-index: 100;
+
+  
+
+  .center-div {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(244, 63, 84, 1);
+    top: 25%;
+    left: 35%;
+    z-index: -1;
+    border-radius: 54% 46% 53% 47% / 39% 42% 58% 61%;
+    transform: rotate(45deg);
+  }
+
+  
   .texts {
     display: flex;
     align-items: center;
@@ -82,6 +98,10 @@ export const Card = styled.div`
   }
   p {
     font-size: 18px;
+    color: #fff;
+    @media screen and (max-width: 768px) {
+      margin: 0;
+    }
   }
   .headr {
     position: relative !important;

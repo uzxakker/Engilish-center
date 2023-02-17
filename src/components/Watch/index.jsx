@@ -23,6 +23,7 @@ function Watch() {
               data-aos="fade-right"
               data-aos-duration="700"
               onClick={handleOpen}
+              className="btn-anime"
             >
               Watch Video
             </button>

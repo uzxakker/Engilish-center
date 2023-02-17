@@ -19,17 +19,17 @@ function Button({ children , href }) {
     <motion.a
       custom={5}
       variants={buttonAnime}
-      className="custom-btn btn-12"
+      className="btn-anime"
       href={href}
     >
-      <span>
+      {/* <span> */}
+        {/* <i class="bx bx-chevron-right"></i> */}
+        {children}
+      {/* </span> */}
+      {/* <span>
         <i class="bx bx-chevron-right"></i>
         {children}
-      </span>
-      <span>
-        <i class="bx bx-chevron-right"></i>
-        {children}
-      </span>
+      </span> */}
     </motion.a>
   );
 }

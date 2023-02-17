@@ -22,7 +22,7 @@ export default function Teacher() {
     <WrapperTeacher id="whoisteacher">
       <WrapperContainer>
         <Wrapper>
-          <h2 className="teacher-title">Ustozlarim kim?</h2>
+          <h2 data-aos='fade-down' data-aos-duration='900' className="teacher-title">Ustozlarim kim?</h2>
           <Tabs defaultActiveKey="1" items={items} onChange={onChange} />
         </Wrapper>
       </WrapperContainer>

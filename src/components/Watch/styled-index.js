@@ -52,10 +52,69 @@ export const Wrapper = styled.div`
       height: 300px;
     }
   }
-  /* .tv-img {
-    width: 300px;
-    height: 200px;
-  } */
+  .btn-anime {
+    margin-top: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .btn-anime::before,
+  .btn-anime::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
+  .btn-anime::before {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      180deg,
+      rgba(190, 142, 251, 255) 0%,
+      rgba(141, 95, 201, 255) 50%
+    );
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(141, 95, 201, 255);
+  }
+  .btn-anime::after {
+    bottom: -10px;
+    right: -10px;
+    width: 40px;
+    height: 40px;
+    background: #ffffff15;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.151);
+    border-radius: 50px;
+  }
+
+  .btn-anime:hover::before {
+    bottom: -7px;
+    right: -5px;
+    width: 110%;
+    height: 110%;
+  }
+  .btn-anime:hover::after {
+    border-radius: 10px;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
   button {
     background-image: linear-gradient(
       180deg,

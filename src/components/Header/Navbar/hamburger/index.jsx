@@ -13,16 +13,16 @@ function Hamburger({ HendelChange, ValueLng, set, modal }) {
         <ion-icon name="close-outline" onClick={HendelClose}></ion-icon>
         <ul className="ul_nav">
           <li>
-            <a  onClick={HendelClose} href="#course">{t("Navbar.0")}</a>
+            <a  onClick={HendelClose} href="#tariffs">{t("Navbar.2")}</a>
           </li>
           <li>
-            <a onClick={HendelClose} href="#spikers">{t("Navbar.1")}</a>
+            <a onClick={HendelClose} href="#results">{t("Navbar.5")}</a>
           </li>
           <li>
-            <a onClick={HendelClose} href="#tariffs">{t("Navbar.2")}</a>
+            <a onClick={HendelClose} href="#whoisteacher">{t("Navbar.6")}</a>
           </li>
           <li>
-            <a onClick={HendelClose} href="#about">{t("Navbar.3")}</a>
+            <a onClick={HendelClose} href="#">{t("Navbar.4")}</a>
           </li>
           <li>
             {ValueLng() == "uz" ? (
@@ -45,9 +45,6 @@ function Hamburger({ HendelChange, ValueLng, set, modal }) {
                 <option value="ru">RU</option>
               </select>
             )}
-          </li>
-          <li>
-            <a href="#">{t("Navbar.4")}</a>
           </li>
         </ul>
       </Modals>

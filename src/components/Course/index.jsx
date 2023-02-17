@@ -37,7 +37,7 @@ function Course({ textEnter, textLeave }) {
                     alt="photo"
                   />
                   <button className="Subtext"> {t("Course.1")}</button>
-                  <p textLeave={textLeave} textEnter={textEnter}>
+                  <p className="white-p">
                     {t("Course.2")}
                   </p>
                   <div className="littleCol">
@@ -67,7 +67,7 @@ function Course({ textEnter, textLeave }) {
                     alt="photo"
                   />
                   <button className="Subtext"> {t("Course.1")}</button>
-                  <p textLeave={textLeave} textEnter={textEnter}>
+                  <p className="white-p" textLeave={textLeave} textEnter={textEnter}>
                     {t("Course.2")}
                   </p>
                   <div className="littleCol">
@@ -97,7 +97,7 @@ function Course({ textEnter, textLeave }) {
                     alt="photo"
                   />
                   <button className="Subtext"> {t("Course.1")}</button>
-                  <p textLeave={textLeave} textEnter={textEnter}>
+                  <p className="white-p" textLeave={textLeave} textEnter={textEnter}>
                     {t("Course.2")}
                   </p>
                   <div className="littleCol">
@@ -127,7 +127,7 @@ function Course({ textEnter, textLeave }) {
                     alt="photo"
                   />
                   <button className="Subtext"> {t("Course.1")}</button>
-                  <p textLeave={textLeave} textEnter={textEnter}>
+                  <p className="white-p" textLeave={textLeave} textEnter={textEnter}>
                     {t("Course.2")}
                   </p>
                   <div className="littleCol">
@@ -157,7 +157,7 @@ function Course({ textEnter, textLeave }) {
                     alt="photo"
                   />
                   <button className="Subtext"> {t("Course.1")}</button>
-                  <p textLeave={textLeave} textEnter={textEnter}>
+                  <p className="white-p" textLeave={textLeave} textEnter={textEnter}>
                     {t("Course.2")}
                   </p>
                   <div className="littleCol">
@@ -187,12 +187,12 @@ function Course({ textEnter, textLeave }) {
                     alt="photo"
                   />
                   <button className="Subtext"> {t("Course.1")}</button>
-                  <p textLeave={textLeave} textEnter={textEnter}>
+                  <p className="white-p" textLeave={textLeave} textEnter={textEnter}>
                     {t("Course.2")}
                   </p>
                   <div className="littleCol">
                     <h3 textLeave={textLeave} textEnter={textEnter}>
-                      {" "}
+                      
                       {t("Course.3")}
                     </h3>
                     <p

@@ -86,6 +86,7 @@ export const Wrapper = styled.div`
     }
     p {
       font-size: 19px;
+      margin-bottom: 50px;
     }
     ul {
       padding: 0;

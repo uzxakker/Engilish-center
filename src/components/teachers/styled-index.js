@@ -2,26 +2,56 @@ import styled from "styled-components";
 
 export const WrapperTeachers = styled.div`
   padding: 50px 0;
-
-  /* background-image: linear-gradient(
-      180deg,
-      rgba(81, 163, 254, 255) 0%,
-      rgba(81, 163, 254, 0) 50%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, .9) 50%,
-      rgba(81, 163, 254, 255) 100%
-    ),
-    url("https://thumb.tildacdn.com/tild6133-3862-4536-b666-323765353361/-/format/webp/m-monk-E813FON0wDQ-u.png"); */
-  /* background-repeat: no-repeat; */
-  /* background-color: #51a3fe; */
-  /* background-size: 100%; */
 `;
 
 export const Wrapper = styled.div`
   @media screen and (max-width: 768px) {
     padding: 0 20px;
+  }
+
+  .before-div {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(156, 237, 86, 255);
+    top: -35px;
+    left: -80px;
+    z-index: -1;
+    border-radius: 54% 46% 53% 47% / 39% 42% 58% 61%;
+    transform: rotate(45deg);
+  }
+
+  .center-div {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(180deg, rgba(191,143,253,1) 0%, rgba(141,95,201,1) 100%);
+    top: 25%;
+    left: 35%;
+    z-index: -1;
+    border-radius: 54% 46% 53% 47% / 39% 42% 58% 61%;
+    transform: rotate(45deg);
+  }
+
+  .after-div {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 149, 25, 1);
+    top: 10px;
+    right: 10px;
+    z-index: -1;
+    border-radius: 10px;
+    border-radius: 54% 46% 53% 47% / 39% 42% 58% 61%;
+    /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
+    transform: rotate(105deg);
+    transform-origin: bottom;
+  }
+
+  .col1 {
+    @media screen and (max-width: 768px) {
+        margin-bottom: 272px;
+    }
   }
   h2 {
     margin: 0;
@@ -35,6 +65,14 @@ export const Wrapper = styled.div`
     text-align: center;
     font-size: 40px;
     margin-bottom: 90px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 425px) {
+      margin-bottom: 0;
+    }
 
     @media screen and (max-width: 375px) {
       margin-bottom: 0;
@@ -50,7 +88,7 @@ export const Wrapper = styled.div`
     padding-top: 280px !important;
 
     @media screen and (max-width: 1024px) {
-     margin: 0 !important;
+      margin: 0 !important;
     }
   }
   /* width: 500px; */

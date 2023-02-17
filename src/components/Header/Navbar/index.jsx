@@ -43,10 +43,10 @@ function Navbar({ textEnter, textLeave }) {
               <a href="#tariffs">{t("Navbar.2")}</a>
             </li>
             <li>
-              <a href="#">Natijalar</a>
+              <a href="#results">{t("Navbar.5")}</a>
             </li>
             <li>
-              <a href="#whoisteacher">Ustozlarim kim?</a>
+              <a href="#whoisteacher">{t("Navbar.6")}</a>
             </li>
             <li>
               <a href="#">{t("Navbar.4")}</a>

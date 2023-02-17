@@ -11,27 +11,16 @@ html{
 
 /* * {
   cursor: none;
-} */
+} */ 
  body {
     margin: 0 ;
     padding: 0;
     font-family: "Fredoka", sans-serif !important;
-    background-color: #51A3FE;
-    /* background-image: linear-gradient(90deg, rgba(255,149,25,1) 0%, rgba(244,63,84,1) 100%); */
-    /* background-color: #FF3CAC;
-background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%); */
-
-    /* background: linear-gradient(60deg, rgba(156,237,86,255) 0%, #bf8ffd 25%, rgba(0,212,255,1) 100%); */
-    /* background: #bf8ffd; */
-    /* background: #654ea3;
-  background: -webkit-linear-gradient(to right, #654ea3, #eaafc8); 
-  background: linear-gradient(to right, #654ea3, #eaafc8); */
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, #51A3FE 36%, rgba(255,149,25,1) 35%,
+    rgba(255,149,25,1) 59%, #bf8ffd 85%);
     border-color: transparent;
-    background-attachment: fixed;
-
-    /* @media screen and (max-width: 768px) {
-     padding: 0 20px;
-  } */
+  
 
     @keyframes animate {
     0%{
@@ -168,7 +157,7 @@ export const Div = styled.div`
   overflow: hidden;
   z-index: 0;
 
- 
+  
 
   .cursor {
     background-color: #fff;
@@ -182,11 +171,5 @@ export const Div = styled.div`
     z-index: 10;
   }
 
-  /* .teacherss{
-    background-color: #51A3FE;
-    background-attachment: fixed;
-  }
-  .onlines{
-    background-color: #bf8ffd;
-  } */
+
 `;

@@ -31,6 +31,9 @@ export const Wrapper = styled.div`
     display: flex;
     flex-wrap: wrap;
   }
+  @media screen and (max-width: 768px) {
+   padding: 50px 30px;
+  }
   h2 {
     margin: 0;
     color: white;

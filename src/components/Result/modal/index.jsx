@@ -15,6 +15,7 @@ const style = {
   boxShadow: 24,
   p: 4,
   with: "100%",
+  height: '500px'
 };
 
 export default function VideoModa({ open, setOpen, handleClose }) {

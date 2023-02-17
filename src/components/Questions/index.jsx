@@ -29,13 +29,14 @@ function Questions({ textEnter, textLeave }) {
           <div className="acords">
             <Accordion
               className="accordion"
-              // data-aos="fade-down"
-              // data-aos-duration="500"
+              data-aos="fade-left"
+              data-aos-duration="700"
               expanded={expanded === "panel1"}
               onChange={handleChange("panel1")}
               style={{
                 color: "white",
                 margin: "10px 0 0 0",
+                borderRadius: "20px",
               }}
             >
               <AccordionSummary
@@ -44,13 +45,7 @@ function Questions({ textEnter, textLeave }) {
                 id="panel1bh-header"
               >
                 <div className="s">
-                  <h2
-                    textLeave={textLeave}
-                    textEnter={textEnter}
-                    style={{ margin: 0 }}
-                  >
-                    Lorem ipsum dolor sit amet.
-                  </h2>
+                  <h2 style={{ margin: 0 }}>Lorem ipsum dolor sit amet.</h2>
                 </div>
               </AccordionSummary>
               <AccordionDetails>
@@ -62,13 +57,14 @@ function Questions({ textEnter, textLeave }) {
             </Accordion>
             <Accordion
               className="accordion"
-              // data-aos="fade-down"
-              // data-aos-duration="600"
+              data-aos="fade-right"
+              data-aos-duration="700"
               expanded={expanded === "panel2"}
               onChange={handleChange("panel2")}
               style={{
                 color: "white",
                 margin: "10px 0 0 0",
+                borderRadius: "20px",
               }}
             >
               <AccordionSummary
@@ -95,13 +91,14 @@ function Questions({ textEnter, textLeave }) {
             </Accordion>
             <Accordion
               className="accordion"
-              // data-aos="fade-down"
-              // data-aos-duration="700"
+              data-aos="fade-left"
+              data-aos-duration="700"
               expanded={expanded === "panel3"}
               onChange={handleChange("panel3")}
               style={{
                 color: "white",
                 margin: "10px 0 0 0",
+                borderRadius: "20px",
               }}
             >
               <AccordionSummary
@@ -128,13 +125,13 @@ function Questions({ textEnter, textLeave }) {
             </Accordion>
             <Accordion
               className="accordion"
-              // data-aos="fade-down"
-              // data-aos-duration="800"
+              data-aos="fade-right" data-aos-duration='700'
               expanded={expanded === "panel4"}
               onChange={handleChange("panel4")}
               style={{
                 color: "white",
                 margin: "10px 0 0 0",
+                borderRadius: "20px",
               }}
             >
               <AccordionSummary

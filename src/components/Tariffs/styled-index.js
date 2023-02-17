@@ -91,7 +91,7 @@ export const Wrapper = styled.div`
     }
     .button {
       .btn {
-        margin: 0 auto;
+        margin: 50px auto 0 auto;
         /* width: 258px; */
       }
     }

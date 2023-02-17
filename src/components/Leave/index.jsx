@@ -20,11 +20,8 @@ const Leave = ({ textEnter, textLeave }) => {
                 </p>
                 <div className="button">
                   <div className="btn">
-                    <button>
-                      <ion-icon name="chevron-forward-outline"></ion-icon>
-                      <span textLeave={textLeave} textEnter={textEnter}>
+                    <button className="btn-anime">
                         Savol Qoldirish
-                      </span>
                     </button>
                   </div>
                 </div>

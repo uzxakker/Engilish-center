@@ -18,7 +18,7 @@ function Values() {
       {/* data-aos="fade-up" data-aos-duration="700" */}
         <Wrapper>
           <Parallax startScroll={3000} speed={2} translateX={[0, 0]}>
-          <ul >
+          <ul data-aos="fade-up" data-aos-duration='700'>
             <li>
               <div className="icon">
                 <ion-icon name="logo-youtube"></ion-icon>

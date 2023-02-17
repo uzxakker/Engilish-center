@@ -60,7 +60,7 @@ function App() {
         <Watch />
         {/* <Categorise /> */}
         <Values />
-        <About />
+        {/* <About /> */}
         <Footer />
 
         <AnimatedCursor
